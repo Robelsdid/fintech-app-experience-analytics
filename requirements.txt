@@ -1,1 +1,13 @@
 google-play-scraper
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+spacy
+textblob
+nltk
+transformers
+torch
+oracledb
+pytest

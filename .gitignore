@@ -1,14 +1,25 @@
-# Python
-__pycache__/
-*.py[cod]
-
-# Data
+# Ignore raw scraped data
 data/raw/
 
-# Environment
-.env
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code settings (optional)
+.vscode/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Virtual environment (if any)
+env/
+venv/
 .venv/
 
-# IDE
-.vscode/
-.idea/
+# Environment variables
+.env
