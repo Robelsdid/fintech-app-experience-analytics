@@ -4,7 +4,7 @@ import time
 from pathlib import Path
 from google_play_scraper import Sort, reviews
 
-#Correct Google Play package names
+# Correct Google Play package names
 apps = {
     "cbe": "com.combanketh.mobilebanking",
     "boa": "com.boa.boaMobileBanking",
@@ -38,7 +38,7 @@ def scrape_reviews(app_name, app_package, total_reviews=500):
 
         all_reviews.extend(batch)
 
-        #Break if no new reviews are being added (loop or limit hit)
+        # Break if no new reviews are being added (loop or limit hit)
         if len(all_reviews) == last_count or not batch:
             print("No new reviews fetched. Ending early.")
             break
@@ -50,7 +50,7 @@ def scrape_reviews(app_name, app_package, total_reviews=500):
             print("Reached last page.")
             break
 
-        time.sleep(1.5)  # Pause to avoid rate-limiting
+        time.sleep(1.5)  #Pause to avoid rate-limiting
 
     # Trim and save
     all_reviews = all_reviews[:total_reviews]
@@ -60,9 +60,9 @@ def scrape_reviews(app_name, app_package, total_reviews=500):
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(all_reviews, f, ensure_ascii=False, indent=2)
 
-    print(f" Saved {len(all_reviews)} reviews to {out_path}")
+    print(f"Saved {len(all_reviews)} reviews to {out_path}")
 
-# Run only Dashen for now, or uncomment others as needed
+#Run only Dashen for now, or uncomment others as needed
 if __name__ == "__main__":
     # scrape_reviews("cbe", apps["cbe"])
     # scrape_reviews("boa", apps["boa"])
