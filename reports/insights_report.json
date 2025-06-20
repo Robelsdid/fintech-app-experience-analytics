@@ -1,0 +1,148 @@
+{
+  "summary": {
+    "total_reviews": 1461,
+    "average_ratings": {
+      "mean": {
+        "Bank of Abyssinia": 3.01,
+        "Commercial Bank of Ethiopia": 4.28,
+        "Dashen Bank": 4.48
+      },
+      "count": {
+        "Bank of Abyssinia": 500,
+        "Commercial Bank of Ethiopia": 500,
+        "Dashen Bank": 461
+      }
+    },
+    "sentiment_distribution": {
+      "POSITIVE": 910,
+      "NEGATIVE": 551
+    }
+  },
+  "bank_analyses": {
+    "CBE": {
+      "rating": 4.282,
+      "sentiment_score": 0.9745911295413971,
+      "positive_pct": 70.0,
+      "top_drivers": [
+        [
+          "good",
+          108
+        ],
+        [
+          "app",
+          65
+        ],
+        [
+          "good app",
+          39
+        ]
+      ],
+      "top_pain_points": [
+        [
+          "app",
+          10
+        ],
+        [
+          "\u1290\u12cd",
+          7
+        ],
+        [
+          "work",
+          7
+        ]
+      ],
+      "top_themes": [
+        "Other",
+        "Transaction Performance",
+        "User Interface & Experience"
+      ]
+    },
+    "BOA": {
+      "rating": 3.012,
+      "sentiment_score": 0.9634849649667739,
+      "positive_pct": 41.4,
+      "top_drivers": [
+        [
+          "good",
+          62
+        ],
+        [
+          "app",
+          20
+        ],
+        [
+          "good app",
+          13
+        ]
+      ],
+      "top_pain_points": [
+        [
+          "app",
+          27
+        ],
+        [
+          "work",
+          25
+        ],
+        [
+          "boa",
+          12
+        ]
+      ],
+      "top_themes": [
+        "Other",
+        "Transaction Performance",
+        "Customer Support"
+      ]
+    },
+    "Dashen": {
+      "rating": 4.477223427331888,
+      "sentiment_score": 0.9850845918738144,
+      "positive_pct": 76.57266811279827,
+      "top_drivers": [
+        [
+          "good",
+          48
+        ],
+        [
+          "app",
+          33
+        ],
+        [
+          "wow",
+          19
+        ]
+      ],
+      "top_pain_points": [
+        [
+          "work",
+          5
+        ],
+        [
+          "\u1290\u12cd",
+          5
+        ],
+        [
+          "transaction",
+          4
+        ]
+      ],
+      "top_themes": [
+        "Other",
+        "Transaction Performance",
+        "User Interface & Experience"
+      ]
+    }
+  },
+  "recommendations": {
+    "cbe": [
+      "Maintain current performance"
+    ],
+    "boa": [
+      "Focus on specific improvements"
+    ],
+    "dashen": [
+      "Maintain and enhance"
+    ]
+  }
+}
